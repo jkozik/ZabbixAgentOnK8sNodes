@@ -76,3 +76,12 @@ Press Ctrl+C to exit.
     87:20230812:191734.310 Unable to connect to [zabbix-server]:10051 [cannot resolve [zabbix-server]]
     87:20230812:191734.310 Active check configuration update started to fail
 ```
+kmasterhostconfig081223.png
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/jkozik/markdown-here/raw/master/src/common/kmasterhostconfig081223.png "L
+kmaster configuration"
+
+
