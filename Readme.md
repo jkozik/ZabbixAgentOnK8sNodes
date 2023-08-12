@@ -77,6 +77,11 @@ Press Ctrl+C to exit.
     87:20230812:191734.310 Active check configuration update started to fail
 ```
 
-Reference-style: 
-![](kmasterhostconfig081223.png)
+## Zabbix host configuration for kmaster node
+Here's the dialog box that I used to define the kmaster node as a host on the zabbix server.  Note:  I used Zabbix Agent Active Agent with interface IP address of 0.0.0.0.
 
+Also note, that because the agent is configurated as an active agent, it calls the zabbix server.  No special incoming port need to be openned on the nodes.  I tried to automate this with auto-regisration but it didnot work very well.  My k8s node count has stayed the same for more than a year; static configuration works for me.
+<br>
+![](images/kmasterhostconfig081223.png)
+
+<br>
