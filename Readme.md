@@ -4,6 +4,12 @@ I created a group called K8s Nodes.
 Here's an example of how I setup my node called kmaster.
 ## Install zabbix agent on k8s node
 ```
+docker run --name zabbix-agent -e ZBX_ACTIVESERVERS="linode3.kozik.net" \
+   -e ZBX_HOSTNAME="kmaster" \
+   -d zabbix/zabbix-agent:alpine-6.0-latest
+```
+Screen capture of command output
+```
 [jkozik@kmaster ~]$ docker run --name zabbix-agent -e ZBX_ACTIVESERVERS="linode3.kozik.net" \
 >    -e ZBX_HOSTNAME="kmaster" \
 >    -d zabbix/zabbix-agent:alpine-6.0-latest
