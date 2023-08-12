@@ -1,7 +1,9 @@
+# Zabbix Agent on Kubernetes Node
 It is really simple to add a basic zabbix agent to each kubernetes nodes in your cluster.  I run the agent in a container in active mode. I manually name and configure each nodes as a zabbix host ((Template OS Linux by Zabbix agent active) -- no autoregistration.
 I created a group called K8s Nodes. 
 Here's an example of how I setup my node called kmaster.
 ## Install zabbix agent on k8s node
+```
 [jkozik@kmaster ~]$ docker run --name zabbix-agent -e ZBX_ACTIVESERVERS="linode3.kozik.net" \
 >    -e ZBX_HOSTNAME="kmaster" \
 >    -d zabbix/zabbix-agent:alpine-6.0-latest
