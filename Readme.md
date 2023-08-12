@@ -78,9 +78,5 @@ Press Ctrl+C to exit.
 ```
 
 Reference-style: 
-![alt text][logo]
-
-[logo]: https://github.com/jkozik/markdown-here/raw/master/src/common/kmasterhostconfig081223.png "L
-kmaster configuration"
-
+![](kmasterhostconfig081223.png)
 
